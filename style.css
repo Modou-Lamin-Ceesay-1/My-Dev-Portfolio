@@ -128,6 +128,34 @@ main{
     margin-bottom: 120px;
 }
 
+.skills-slider {
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.slider-track {
+    display: flex;
+    width: calc(200%);
+    animation: slide 18s linear infinite;
+}
+
+.skills-item {
+    min-width: 220px;
+    margin-right: 60px;
+    text-align: center;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
 .skills{
     display: flex;
     gap: 50px;
