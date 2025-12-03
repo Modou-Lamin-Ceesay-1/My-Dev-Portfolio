@@ -110,7 +110,7 @@ strong{
 /*  ABOUT */
 .about {
   max-width: 800px;
-  margin: 6rem auto;
+  margin: 3rem auto;
   text-align: center;
   padding: 0 1rem;
 }
@@ -131,19 +131,28 @@ main{
 .skills-slider {
     width: 100%;
     overflow: hidden;
-    padding: 40px 0;
+    padding: 35px 0;
 }
 
 .slider-track {
     display: flex;
     width: calc(200%);
     animation: slide 18s linear infinite;
+    align-items: center;
 }
 
 .skills-item {
     min-width: 220px;
     margin-right: 60px;
     text-align: center;
+    color: white;
+}
+
+.skills-item img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: contain;
 }
 
 @keyframes slide {
