@@ -128,24 +128,29 @@ main{
     margin-bottom: 120px;
 }
 
+/* SLIDER CONTAINER */
 .skills-slider {
     width: 100%;
     overflow: hidden;
     padding: 35px 0;
 }
 
+/* MOVING TRACK */
 .slider-track {
     display: flex;
-    width: calc(200%);
-    animation: slide 18s linear infinite;
+    width: max-content; /* 🔥 key fix */
     align-items: center;
+    animation: slide 28s linear infinite;
 }
 
+/* EACH SKILL */
 .skills-item {
-    min-width: 220px;
+    flex-shrink: 0;           /* 🔥 prevents clipping */
+    width: 220px;
     margin-right: 60px;
     text-align: center;
-    color: white;
+    color: #ffffff;
+    font-size: 22px;
 }
 
 .skills-item img {
@@ -155,11 +160,12 @@ main{
     object-fit: contain;
 }
 
+/* ANIMATION */
 @keyframes slide {
-    0% {
+    from {
         transform: translateX(0);
     }
-    100% {
+    to {
         transform: translateX(-50%);
     }
 }
