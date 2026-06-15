@@ -32,7 +32,7 @@ header{
 }
 
 .hero-image{
-    height: 655px;
+    height: 575px;
     width: 435px;
     margin-bottom: 30px;
     padding-left: 0px;
@@ -126,6 +126,17 @@ main{
     padding-left: 130px;
     padding-right: 130px;
     margin-bottom: 120px;
+}
+
+/* .triforge{
+    color: #4ee1a0;
+} */
+
+.triforge1{
+    color: #4ee1a0;
+    text-decoration: none;
+    font-weight: 500;
+
 }
 
 /* SLIDER CONTAINER */
